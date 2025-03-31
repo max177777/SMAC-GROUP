@@ -2,12 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-
-number = st.slider("Pick a number: ", min_value=1, max_value=10)
-st.text("Your number is " + str(number))
-
 # Load Data
-file_path = "C:/Users/max_x/ucb/A - macss/2025 Spring/Climate TRACE & CLEE/Data/test-4-smac/smac.csv"
+file_path = "DATA_14.csv"
 df = pd.read_csv(file_path)
 
 # Basic Preprocessing
@@ -111,6 +107,7 @@ sector_map = {
 st.set_page_config(layout="wide")
 st.title("SMAC Members Methane Inventory")
 st.markdown("This is a testing version, if you see some warning below the table, just change a differnet location B in the Comparison Tool")
+st.markdown("PS. this is 1/14 part of data since the streamlit has some issue to running large dataset")
 
 # Tabs
 tab2, tab1, tab3 = st.tabs(["SMAC Group Methane Emissions", " Subnational Methane Emissions","Comparison Tool"])
