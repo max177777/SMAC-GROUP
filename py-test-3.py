@@ -106,8 +106,8 @@ sector_map = {
 # App Settings
 st.set_page_config(layout="wide")
 st.title("SMAC Members Methane Inventory")
-st.markdown("This is a testing version, if you see some warning below the table, just change a differnet location B in the Comparison Tool")
-st.markdown("PS. this is 1/14 part of data since the streamlit has some issue to running large dataset")
+st.markdown("This is a testing version, if you see some warning below the table, just change a different location B in the Comparison Tool")
+st.markdown("PS. this is 1/25 part of data since the Streamlit has some issue to running large dataset")
 
 # Tabs
 tab2, tab1, tab3 = st.tabs(["SMAC Group Methane Emissions", " Subnational Methane Emissions","Comparison Tool"])
